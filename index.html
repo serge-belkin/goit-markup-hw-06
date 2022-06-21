@@ -74,22 +74,33 @@
                   <use href="./images/icons.svg#icon-close"></use>
                 </svg>
               </button>
-              <strong>Оставьте свои данные, мы вам перезвоним</strong>
+              <strong class="modal-title">Оставьте свои данные, мы вам перезвоним</strong>
               <form action="">
                 <div>
-                  <label for="name">Имя</label>
-                  <input type="text" name="name" id="name" />
-                  <label for="tel">Телефон</label>
-                  <input type="text" name="tel" id="tel" />
-                  <label for="mail">Почта</label>
-                  <input type="text" name="mail" id="modal-mail" />
-                  <label for="textarea">Комментарий</label>
-                  <input
-                    type="textarea"
-                    name="textarea"
-                    id="textarea"
-                    placeholder="Введите текст"
-                  />
+                  <label for="name"
+                    >Имя
+                    <input type="text" name="name" />
+                  </label>
+
+                  <label for="tel"
+                    >Телефон
+                    <input type="text" name="tel" />
+                  </label>
+
+                  <label for="mail"
+                    >Почта
+                    <input type="text" name="mail" id="modal-mail" />
+                  </label>
+
+                  <label for="textarea"
+                    >Комментарий
+                    <input
+                      type="textarea"
+                      name="textarea"
+                      id="textarea"
+                      placeholder="Введите текст"
+                    />
+                  </label>
                 </div>
                 <input type="checkbox" />
                 <label for="checkbox"
@@ -105,7 +116,7 @@
       <!--Особенности-->
       <section class="section">
         <div class="container">
-          <h2 class="title section-title" hidden>Особенности</h2>
+          <h2 class="title section-title visually-hidden">Особенности</h2>
           <ul class="features">
             <li class="list-item">
               <div class="features-box">
@@ -468,7 +479,7 @@
               name="mail"
               id="footer-mail"
               placeholder="E-mail"
-              class="mail-field"
+              class="footer-mail-field"
             />
           </div>
           <button class="subscription-btn" type="submit">Подписаться</button>
