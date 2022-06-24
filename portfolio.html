@@ -67,13 +67,49 @@
       <section class="section">
         <div class="container">
           <h1 class="title" hidden>Портфолио</h1>
-          <div class="buttons">
-            <button type="button" class="filter current">Все</button>
-            <button type="button" class="filter">Веб-сайты</button>
-            <button type="button" class="filter">Приложения</button>
-            <button type="button" class="filter">Дизайн</button>
-            <button type="button" class="filter">Маркетинг</button>
-          </div>
+          <form class="buttons">
+            <label
+              ><input
+                class="portfolio-button visually-hidden"
+                type="radio"
+                name="filter"
+                value="all"
+                checked
+              /><span class="filter">Все</span></label
+            >
+            <label
+              ><input
+                class="portfolio-button visually-hidden"
+                type="radio"
+                name="filter"
+                value="web"
+              /><span class="filter">Веб-сайты</span></label
+            >
+            <label
+              ><input
+                class="portfolio-button visually-hidden"
+                type="radio"
+                name="filter"
+                value="app"
+              /><span class="filter">Приложения</span></label
+            >
+            <label
+              ><input
+                class="portfolio-button visually-hidden"
+                type="radio"
+                name="filter"
+                value="design"
+              /><span class="filter">Дизайн</span></label
+            >
+            <label
+              ><input
+                class="portfolio-button visually-hidden"
+                type="radio"
+                name="filter"
+                value="marketing"
+              /><span class="filter">Маркетинг</span></label
+            >
+          </form>
 
           <ul class="card-set">
             <li class="list-item portfolio-card">
@@ -279,17 +315,12 @@
             </li>
           </ul>
         </div>
-        <form action="" class="subscription">
-          <div class="subscription-box">
-            <label for="mail" name="mail" class="subscription-title">Подпишитесь на рассылку</label>
-            <input
-              type="mail"
-              name="mail"
-              id="footer-mail"
-              placeholder="E-mail"
-              class="footer-mail-field"
-            />
-          </div>
+        <form class="subscription">
+          <label class="subscription-box">
+            <span class="subscription-title">Подпишитесь на рассылку</span>
+            <input type="email" name="email" placeholder="E-mail" class="footer-mail-field" />
+          </label>
+
           <button class="subscription-btn" type="submit">
             Подписаться
             <svg width="24" height="24" class="send-icon">

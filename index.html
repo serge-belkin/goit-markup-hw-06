@@ -76,7 +76,7 @@
               </button>
               <div class="modal-box">
                 <strong class="modal-title">Оставьте свои данные, мы вам перезвоним</strong>
-                <form action="" class="modal-form">
+                <form class="modal-form">
                   <label class="modal-label-box">
                     <span class="modal-label">Имя</span>
                     <input type="text" name="name" class="modal-field" />
@@ -486,17 +486,12 @@
             </li>
           </ul>
         </div>
-        <form action="" class="subscription">
-          <div class="subscription-box">
-            <label for="mail" name="mail" class="subscription-title">Подпишитесь на рассылку</label>
-            <input
-              type="mail"
-              name="mail"
-              id="footer-mail"
-              placeholder="E-mail"
-              class="footer-mail-field"
-            />
-          </div>
+        <form class="subscription">
+          <label class="subscription-box">
+            <span class="subscription-title">Подпишитесь на рассылку</span>
+            <input type="email" name="email" placeholder="E-mail" class="footer-mail-field" />
+          </label>
+
           <button class="subscription-btn" type="submit">
             Подписаться
             <svg width="24" height="24" class="send-icon">

@@ -758,6 +758,7 @@ flex-direction: column;
 /* Стили для мейна страницы "Портфолио" */
 
 .filter {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -767,13 +768,15 @@ font-family: inherit;
   border: none;
   padding: 6px 22px;
   border-radius: 4px;
+  background-color: #F5F4FA;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.filter.current {
+
+.portfolio-button:checked + .filter{
   color: var(--tertiary-text-color);
-  background-color: var(--accent-color);
+    background-color: var(--accent-color);
 }
 
 .filter:hover,
@@ -823,7 +826,7 @@ align-items: center;
 margin-bottom: 50px;
 }
 
-.buttons .filter:not(:last-child) {
+.buttons label:not(:last-child) {
 margin-right: 8px;
 }
 
